@@ -570,7 +570,7 @@ body {
     color: #7f7f90;
     position: absolute;
     top: 10%;
-    left: 110%;
+    left: 120%;
     transition-duration: var(--main-duration);
     z-index: 1;
     border-radius: 3px;
@@ -584,7 +584,7 @@ body {
 }
 
 #chefs .chef-section:hover .chef-links {
-    left: 85%;
+    left: 80%;
 
 }
 
