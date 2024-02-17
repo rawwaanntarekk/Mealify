@@ -20,6 +20,10 @@
     --list-element-color: black;
 
 }
+::selection {
+    background-color: var(--main-color);
+    color: white;
+}
 
 html {
     scroll-behavior: smooth;
@@ -27,6 +31,13 @@ html {
 
 :target {
     scroll-margin-top: 4rem;
+}
+
+.start-90 {
+    left: 93%;
+}
+.top-4 {
+    top: 2.49%;
 }
 
 ul {
@@ -93,17 +104,9 @@ h2 {
     z-index: 1;
 }
 
-.nav-container {
-    width: 85%;
-    margin: auto;
 
-}
-
-.navbar .content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem 0;
+.navbar :has(#mode:checked) * {
+    color: white !important;
 }
 
 .navbar .logo h2 {
@@ -135,6 +138,7 @@ h2 {
     font-weight: 700;
 
 }
+
 
 body:has(#home:target) li a[href="#home"],
 body:has(#chefs:target) li a[href="#chefs"],
@@ -219,11 +223,7 @@ body {
     cursor: pointer;
 }
 
-.mode-switch .dark {
-    display: flex;
-    justify-content: space-between;
 
-}
 
 :root:has(#mode:checked) .mode-switch .dark .fa-moon {
     display: none !important;
@@ -233,7 +233,7 @@ body {
     
 }
 
-:root:has(#mode:checked) body {
+:root:has(#mode:checked) body * {
     --main-color: #C17E1F !important;
     --hover-color: #D78C23 !important;
     --list-element-color: white !important;
@@ -835,7 +835,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 0.9375rem;
 }
 
 #contact .contact-information .card .icon i {
@@ -912,7 +911,9 @@ body {
     }
 
     #contact .user-information button {
-        width: 30% !important;
+        width: 40% !important;
+        margin: 0rem !important;
+        
     }
 }
 
@@ -942,6 +943,7 @@ body {
 
     #contact .user-information button {
         width: 30% !important;
+        
     }
 }
 

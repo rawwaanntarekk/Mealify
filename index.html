@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mealify</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,37 +19,51 @@
 
 <body>
     <!--Start Navbar section  -->
-    <div class="navbar">
-        <div class="nav-container">
-            <div class="content">
-                <div class="logo">
-                    <h2>Mealify</h2> 
-                </div>
 
-                <div class="navbar-list">
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#chefs">Chefs</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
 
-                </div>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <div class="container position-relative ">
+            <a class="navbar-brand logo" href="#">
+                <h2>Mealify</h2>
+            </a>
+            <button class="navbar-toggler d-lg-none bg-light " type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse me-auto" id="collapsibleNavId">
+                <ul class="navbar-nav ms-auto mt-2 mt-lg-0 navbar-list ">
+                    <li class="nav-item px-2">
+                        <a class="nav-link " href="#home">Home</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="#chefs">Chefs</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class=" position-fixed start-90 top-4">
                 <input type="checkbox" id="mode">
                 <label for="mode" class="mode-switch">
                     <div class="dark">
                         <i class="fa-solid fa-moon"></i>
-                        <i class="fa-solid fa-bars"></i>
                     </div>
                     <div class="light">
                         <i class="fa-solid fa-sun"></i>
                     </div>
                 </label>
-
-
             </div>
         </div>
-    </div>
+
+
+    </nav>
+
 
 
     <!-- End Navbar section  -->
@@ -71,7 +86,7 @@
                 <div class="buttons">
                     <button class="b1 button"> <a href="">Book a Table</a></button>
                     <button class="b2 "> <a href="https://www.youtube.com/">
-                            <div class="Icon">
+                            <div class="Icon z-0">
                                 <i class="fa-solid fa-play"></i>
                             </div>
                             <p>Watch a Video</p>
@@ -100,7 +115,7 @@
             </div>
 
             <div class="chef-sections">
-                <div class="chef-section">
+                <div class="chef-section my-5">
                     <div class="chef-links">
                         <i class="fa-brands fa-twitter"></i>
                         <i class="fa-brands fa-facebook-f"></i>
@@ -120,14 +135,14 @@
 
                     </div>
                 </div>
-                <div class="chef-section">
+                <div class="chef-section my-5">
                     <div class="chef-links">
                         <i class="fa-brands fa-twitter"></i>
                         <i class="fa-brands fa-facebook-f"></i>
                         <i class="fa-brands fa-instagram"></i>
                         <i class="fa-brands fa-linkedin-in"></i>
                     </div>
-                    <div class="Image">
+                    <div class="Image mb-md-4">
                         <img src="Images/chefs-2.jpg" alt="chef2">
                     </div>
                     <div class="text">
@@ -137,7 +152,7 @@
                             corporis. Voluptate sed quas reiciendis animi neque sapiente.</i>
                     </div>
                 </div>
-                <div class="chef-section">
+                <div class="chef-section my-5">
                     <div class="chef-links">
                         <i class="fa-brands fa-twitter"></i>
                         <i class="fa-brands fa-facebook-f"></i>
@@ -242,9 +257,9 @@
                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.445785295115!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1681863129691!5m2!1sen!2sus"
                     frameborder="0"></iframe>
             </div>
-            <div class="contact-information">
+            <div class="contact-information text-center">
                 <div class="card">
-                    <div class="icon">
+                    <div class="icon m-auto mb-2">
                         <i class="fa-regular fa-map"></i>
                     </div>
                     <div class="text">
@@ -254,7 +269,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <div class="icon">
+                    <div class="icon m-auto mb-2">
                         <i class="fa-regular fa-envelope"></i>
                     </div>
                     <div class="text">
@@ -263,8 +278,8 @@
                     </div>
                 </div>
 
-                <div class="card">
-                    <div class="icon">
+                <div class="card m-auto mb-2">
+                    <div class="icon m-auto mb-2">
                         <i class="fa-solid fa-phone"></i>
                     </div>
                     <div class="text">
@@ -273,7 +288,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <div class="icon">
+                    <div class="icon m-auto mb-2">
                         <i class="fa-solid fa-share-nodes"></i>
                     </div>
                     <div class="text">
@@ -292,7 +307,7 @@
                     </div>
                     <input type="text" placeholder="Subject">
                     <textarea name="" id="" cols="30" rows="8" placeholder="Message"></textarea>
-                    <button class="button"> <a href="">Send Message</a></button>
+                    <button class="button "> <a href="">Send Message</a></button>
                 </form>
             </div>
         </div>
@@ -401,7 +416,8 @@
         </div>
     </div>
 
-
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/main.js"></script>
 </body>
 
 </html>
