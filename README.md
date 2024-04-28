@@ -1,4 +1,4 @@
-##Mealify boasts four intuitive sections:
+Mealify boasts four intuitive sections:
 1. Home
 2. Chefs
 3. Gallery
